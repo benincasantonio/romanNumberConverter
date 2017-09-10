@@ -21,6 +21,17 @@ public class RomanNumber {
     }
 
     public int toIntegerNumber(String romanNumber){
-        return 1;
+
+
+        int result = 0;
+        for (int i = 2; i > 0; i--){
+            for(int j = 0; j < decimal.length; j++){
+                while(romanNumber.contains(roman[j]) && roman[j].length() == i){
+                    result += decimal[j];
+                    romanNumber = romanNumber.replace(roman[j],"");
+                }
+            }
+        }
+        return result;
     }
 }
