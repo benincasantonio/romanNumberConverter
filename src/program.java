@@ -5,6 +5,6 @@ public class program {
         RomanNumber romanNumber = new RomanNumber();
         System.out.println(romanNumber.toRomanNumber(1001));
         System.out.println(romanNumber.toIntegerNumber("MI"));
-        System.out.println(romanNumber.toIntegerNumber("XXX"));
+        System.out.println(romanNumber.toIntegerNumber("MMMMXII"));
     }
 }
